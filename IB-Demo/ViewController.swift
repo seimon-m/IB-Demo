@@ -14,6 +14,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBOutlet weak var sliderLabel: UILabel!
+    
+    @IBAction func sliderValueChanged(_ sender: UISlider) {
+        sliderLabel.text = String(sender.value)
+    }
+    
 }
 
